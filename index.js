@@ -1,7 +1,7 @@
 exports.humanizeHours = function(periods) {
     let lines = reduceLines(periods);
     return lines.map((el) => humanizeLine(el));
-}
+};
 
 function reduceLines(periods) {
     if (!periods) return false;
@@ -33,7 +33,7 @@ humanizeLine = function(period) {
     line +=
         " " + toAmPm(period.open.time) + "&mdash;" + toAmPm(period.close.time);
     return line;
-}
+};
 
 toAmPm = function(hhmm) {
     const meridien = hhmm.substring(0, 2) >= 12 ? "PM" : "AM";
@@ -44,7 +44,7 @@ toAmPm = function(hhmm) {
     if (minutes) time += ":" + minutes;
     time += meridien;
     return time;
-}
+};
 
 simplifyLine = function(line) {
     line = line.replace(/:|00| /g, "");
@@ -57,4 +57,4 @@ simplifyLine = function(line) {
     line = line.replace(/closed/i, "&mdash;");
 
     return line;
-}
+};
