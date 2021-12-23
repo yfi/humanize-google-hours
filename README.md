@@ -4,13 +4,11 @@ Utility function to summarize hours of operation provided by google places api.
 
 For Example
 ```
-
 Monday: 9AM–5PM
 Tuesday: 9AM–5PM
 Wednesday: 9AM–5PM
 Thursday: 9AM–5PM
 Friday: 9AM–5PM
-
 ```
 becomes
 ```
