@@ -25,7 +25,7 @@ This function accepts the opening_hours.periods array.
 
 ```
 
-let periods = apiResult.opening_hours;
+let periods = apiResult.opening_hours.periods;
 let hours = humanizeHours(periods);
 
 ```
