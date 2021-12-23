@@ -1,0 +1,19 @@
+{
+  "name": "@yfi/humanize-google-hours",
+  "version": "1.0.0",
+  "description": "Reduce google places detail api's opening_hours object to a few lines of text (ie. Mon-Fri 9AM-5PM)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yfi/humanize-google-hours.git"
+  },
+  "author": "@yfi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yfi/humanize-google-hours/issues"
+  },
+  "homepage": "https://github.com/yfi/humanize-google-hours#readme"
+}
