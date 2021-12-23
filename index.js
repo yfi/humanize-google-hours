@@ -25,7 +25,7 @@ function reduceLines(periods) {
     return lines;
 }
 
-humanizeLine = function(period) {
+function humanizeLine(period) {
     const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     let line = days[period.open.day];
     if (period.close.day != period.open.day)
@@ -35,7 +35,7 @@ humanizeLine = function(period) {
     return line;
 };
 
-toAmPm = function(hhmm) {
+function toAmPm(hhmm) {
     const meridien = hhmm.substring(0, 2) >= 12 ? "PM" : "AM";
     const hours = hhmm.substring(0, 2) % 12 || 12;
     const minutes = eval(hhmm.substring(2, 2));
@@ -46,7 +46,7 @@ toAmPm = function(hhmm) {
     return time;
 };
 
-simplifyLine = function(line) {
+function simplifyLine(line) {
     line = line.replace(/:|00| /g, "");
     line = line.replace(
         /Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday/gi,
