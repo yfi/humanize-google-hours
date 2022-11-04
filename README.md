@@ -1,6 +1,6 @@
 # humanize-google-hours
 
-Utility function to summarize hours of operation provided by google places api into fewest possible lines.
+Utility function to refactor hours of operation provided by google places api into fewest possible lines.
 
 For Example
 ```
