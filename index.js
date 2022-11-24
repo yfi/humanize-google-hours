@@ -13,7 +13,7 @@ function reduceLines(periods) {
             if (
                 el.open.day - 1 != prevEl.open.day ||
                 el.open.time != line.open.time ||
-                el.open.time != line.open.time ||
+                el.close.time != line.close.time ||
                 i == arr.length - 1
             ) {
                 line.close.day = prevEl.close.day;
